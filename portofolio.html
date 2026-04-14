@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Portofolio proyek PT DAYU - hasil pembangunan berkualitas tinggi di Indonesia.">
+    <meta name="keywords" content="portofolio konstruksi, proyek bangunan, kontraktor indonesia">
+
+    <title>Portofolio Kami | PT DAYU</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>PT<span>DAYU</span></h1>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="portofolio.html" class="active">Portofolio</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="portfolio-hero">
+    <div class="container">
+        <h1>Karya Nyata Kami</h1>
+        <p>Jejak proyek terbaik yang telah kami selesaikan dengan standar profesional tinggi.</p>
+    </div>
+</section>
+
+<!-- FILTER (NEW FEATURE) -->
+<section class="portfolio-filter">
+    <div class="container">
+
+        <div class="filter-header">
+            <span class="badge">Portofolio</span>
+            <h2>Proyek Kami</h2>
+            <p>Pilih kategori proyek untuk melihat hasil pekerjaan kami</p>
+        </div>
+
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="rumah">Perumahan</button>
+            <button class="filter-btn" data-filter="gedung">Gedung</button>
+            <button class="filter-btn" data-filter="infrastruktur">Infrastruktur</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+    <div class="container">
+
+        <div class="section-title">
+            <span class="badge">Portofolio</span>
+            <h2>Galeri Proyek Kami</h2>
+            <p>Beberapa hasil pekerjaan terbaik kami di berbagai sektor</p>
+        </div>
+
+        <div class="gallery-grid" id="gallery">
+
+            <div class="gallery-item" data-category="rumah">
+                <img loading="lazy" src="https://placehold.co/600x400/2c3e50/ffffff?text=Perumahan" alt="Perumahan Elite Jakarta">
+                <div class="gallery-overlay">
+                    <span class="category">Perumahan</span>
+                    <h3>Perumahan Elite Jakarta</h3>
+                    <p>20 unit rumah modern premium.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="gedung">
+                <img loading="lazy" src="https://placehold.co/600x400/e67e22/ffffff?text=Gedung" alt="Gedung Perkantoran">
+                <div class="gallery-overlay">
+                    <span class="category">Gedung</span>
+                    <h3>Gedung Perkantoran</h3>
+                    <p>Gedung 5 lantai pusat kota.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="infrastruktur">
+                <img loading="lazy" src="https://placehold.co/600x400/34495e/ffffff?text=Jembatan" alt="Jembatan Desa">
+                <div class="gallery-overlay">
+                    <span class="category">Infrastruktur</span>
+                    <h3>Jembatan Desa</h3>
+                    <p>Penghubung antar wilayah.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="gedung">
+                <img loading="lazy" src="https://placehold.co/600x400/7f8c8d/ffffff?text=Gudang" alt="Gudang Logistik">
+                <div class="gallery-overlay">
+                    <span class="category">Gedung</span>
+                    <h3>Gudang Logistik</h3>
+                    <p>Fasilitas penyimpanan skala besar.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="contact-section" id="contact">
+    <div class="container">
+
+        <div class="contact-wrapper">
+
+            <!-- LEFT: TEXT -->
+            <div class="contact-card">
+                <span class="badge">Kontak</span>
+                <h2>Tertarik Bekerja Sama?</h2>
+                <p>Konsultasi gratis dengan tim profesional kami sekarang. Kami siap membantu proyek Anda dari awal hingga selesai.</p>
+
+                <div class="contact-methods">
+                    <a href="https://wa.me/6281234567890" class="wa-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Kami
+                    </a>
+
+                    <div class="contact-info-text">
+                        <p><i class="fas fa-phone-alt"></i> +62 812 3456 7890</p>
+                        <p><i class="fas fa-envelope"></i> info@ptdayu.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <div class="contact-form">
+                <h3>Kirim Pesan</h3>
+                <form>
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Subjek">
+                    <textarea placeholder="Pesan Anda..." rows="4" required></textarea>
+                    <button type="submit">Kirim Sekarang</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>PT<span>DAYU</span></h3>
+            <p>Membangun dengan integritas sejak 2010.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navigasi</h4>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="proyek.html">Proyek</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 PT DAYU</p>
+    </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+// Mobile Menu
+const menu = document.getElementById('mobile-menu');
+const nav = document.getElementById('navLinks');
+menu.addEventListener('click', () => nav.classList.toggle('active'));
+
+// Filter Gallery
+const buttons = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.gallery-item');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        items.forEach(item => {
+            if (filter === 'all' || item.dataset.category === filter) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
